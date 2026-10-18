@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "comment": "Use [\"*\"] for every host, or list exact package names to limit the adapter.",
+  "packages": [
+    "*"
+  ]
+}

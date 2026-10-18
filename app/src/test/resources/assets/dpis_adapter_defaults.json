@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "dpis": {
+    "package_name": "io.github.kwensiu.dpis"
+  },
+  "defaults": {
+    "enabled": true,
+    "dpis_enabled": true,
+    "viewport_mode": "relative",
+    "scale_percent": 100,
+    "width_dp": 360,
+    "font_scale_percent": 100,
+    "log_enabled": false
+  }
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      This APK is an Xposed/LSPatch module, not a normal app. It has no launcher
+      activity and receives no Application of its own when embedded by LSPatch.
+      All runtime code is driven by initZygote()/handleLoadPackage().
+    -->
+    <!--
+      The legacy Xposed marker. LSPatch's "add module from storage" path decides whether
+      an APK is a module with ModuleDetection.inspect, which for a legacy module requires
+      the xposedminversion meta-data — assets/xposed_init alone is only honoured by the
+      CLI packer and by the installed-module list. Without these the Manager answers
+      "… 不是 Xposed 模块".
+    -->
+    <application
+        android:allowBackup="false"
+        android:hasCode="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="DPIS UI Adapter"
+        android:supportsRtl="true">
+
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="DPIS 参数配置悬浮窗" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="93" />
+    </application>
+
+</manifest>

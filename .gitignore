@@ -1,0 +1,24 @@
+# Build output
+build/
+app/build/
+.gradle/
+*.apk
+*.aab
+
+# Machine-specific
+local.properties
+
+# Signing material — never commit
+keystore.properties
+keys/
+*.jks
+*.keystore
+
+# Generated host packages
+out/
+out-*/
+out-backup-*/
+
+# Scratch
+.tmp/
+*.log
